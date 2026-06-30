@@ -95,7 +95,7 @@ The full release will include:
 ``` 
 conda env create -f environment.yml 
 ```
-if flash-attention raises issue, please follow the original [github](https://github.com/dao-ailab/flash-attention) and compile `flash-attn==2.7.4.post1`.
+If flash-attention raises issue, please follow the original [github](https://github.com/dao-ailab/flash-attention) and compile `flash-attn==2.7.4.post1`.
 
 ### 1. Download pretrained models
 
@@ -114,7 +114,7 @@ python extract_text_feature.py --prompt 'There is no airspace opacity, effusion 
                                --text_model_path './model/pretrained_lm' \
                                --save_path './result/text_feature/normal.npy'
 ```
-### 2.2 Latent feature generation.
+### 2.2 Latent feature generation
 ```
 cd src
 python medsynv2_DiT_reportonly.py --text_feature_folder './text_feature' \
@@ -122,7 +122,7 @@ python medsynv2_DiT_reportonly.py --text_feature_folder './text_feature' \
                                   --save_path './tmp/medsynv2_dit_x0_results_reportonly'
 ```
 
-### 2.3 OpenSora Decoding 
+### 2.3 OpenSora decoding 
 ```
 cd opensora/osp
 python examples/recon_ct.py --pretrained_model_path './model/vae.pth' \
@@ -166,7 +166,7 @@ python medsynv2_DiT_reportonly.py --text_feature_folder './text_feature' \
 ### 3.4 OpenSora Decoding 
 The same as 2.3
 
-### If you find any issue implementing the inference, please let us know.
+### If you find any issue implementing the inference, please let us know
 
 ## License and copyright
 The source code is Licensed under [Apache License 2.0](https://github.com/batmanlab/MedSynV2/blob/main/LICENSE.txt).

@@ -14,6 +14,9 @@ Kayhan Batmanghelich<sup>1</sup><sup>*</sup>
 <p align="center">
 <i>ECCV 2026</i>
 </p>
+<p align="center">
+<a href="assets/ECCV_2026_medsynv2.pdf">📄 Read the manuscript (ECCV 2026)</a>
+</p>
 
 <p align="center">
 <!-- <a href=""><img src="https://img.shields.io/badge/Paper-ECCV%202026-blue"/></a> -->
@@ -33,6 +36,7 @@ Crucially, MedSynV2 **does not require full-organ annotations**.
 Users may provide segmentation for a *specific anatomy or abnormality*, whose semantic meaning is specified through an accompanying text description.
 
 This design enables **scalable, fine-grained control** over volumetric generation while maintaining high image fidelity.
+For the full technical details, method description, and experimental results, please see [our manuscript](assets/ECCV_2026_medsynv2.pdf).
 
 ---
 

@@ -1,0 +1,80 @@
+Custom Academic License for Model Weights
+(Based on CC BY-NC 4.0)
+
+1. Overview
+This license governs the use of the accompanying model weights, code, and associated materials (“Model”).
+This license is based on the Creative Commons Attribution-NonCommercial 4.0 International License, with additional restrictions specific to machine learning models.
+By accessing, downloading, or using the Model, you agree to the terms below.
+2. Permitted Use
+The Model may be used solely for non-commercial academic research purposes.
+
+Permitted users include:
+- Academic institutions
+- Non-profit research organizations
+Allowed activities:
+- Research use
+- Evaluation and benchmarking
+- Fine-tuning or linear probing for academic research only
+
+3. Prohibited Use
+The following uses are strictly prohibited:
+
+3.1 Commercial Use
+- Any commercial use
+- Any use by for-profit entities without prior written approval
+- Use in products, services, or revenue-generating activities
+
+3.2 Industry Research Without Approval
+- Any use by industry, including internal research, evaluation, or development, without explicit prior written permission
+
+3.3 Clinical and Medical Use
+- Any clinical deployment
+- Any diagnostic or treatment use
+- Any use in medical decision-making systems
+
+4. Restrictions on Model Use
+
+4.1 Redistribution
+- Redistribution of the Model weights, in whole or in part, is not permitted
+
+4.2 Hosting and Serving
+- Hosting, serving, or making the Model available through an API, SaaS platform, web service, or other remote access mechanism is not permitted
+
+4.3 Distillation and Model Extraction
+- Distillation, compression, extraction, imitation, or transfer of knowledge from the Model to create, train, initialize, or improve another model is not permitted
+
+5. Derivative Works
+Derivative models are allowed only under the following conditions:
+- They must be used solely for non-commercial academic research
+- They must not be shared publicly or redistributed
+- They must inherit this same license in full
+- They must not be used to circumvent restrictions in this license
+
+6. Attribution
+Any use of the Model must include:
+- Proper citation of the associated publication(s)
+- Acknowledgment of the original authors and institution(s)
+Example acknowledgment:
+“This work uses [MODEL NAME] developed by [AUTHORS], [INSTITUTION].”
+7. Access Control
+The Licensor reserves the right to:
+- Restrict access to the Model
+- Require user registration or approval
+- Revoke access in case of misuse or violation of this license
+
+8. No Warranty
+The Model is provided “as is”, without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+The authors and licensors make no guarantees regarding performance, safety, legality, or correctness.
+
+9. Limitation of Liability
+In no event shall the authors, licensors, or affiliated institutions be liable for any claim, damages, or other liability arising from, out of, or in connection with the Model or its use or misuse.
+
+10. Termination
+Any violation of this license results in immediate termination of all rights granted under this license.
+Upon termination, the user must cease all use of the Model and destroy all copies in their possession or control.
+
+11. Contact for Permissions
+For commercial use, industry research, or other exceptions, contact:
+contact:
+Kayhan Batmanghelich
+email: batman@bu.edu

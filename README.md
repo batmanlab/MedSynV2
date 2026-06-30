@@ -151,8 +151,8 @@ python examples/encode_masks.py --batch_index 0 \ # you should use 0~5 here
 Otherwise create some dummy npy files in the `text_feature` folder, just as file name indicator.
 
 ### 3.3 Latent feature generation with mask features (and reports)
-Make sure you check line 559 and put corresponding masks into each folders. 
-The pre-conditions (indicating which masks) are already extracted and uploaded.
+Make sure you check [line 559](https://github.com/batmanlab/MedSynV2/blob/26f2dde890eb2dfa079c1944f9e26c7fd32c954c/src/medsynv2_DiT_masks.py#L559) and put corresponding masks into each folders. 
+The pre-conditions (indicating which masks) are already extracted and [uploaded](https://github.com/batmanlab/MedSynV2/tree/main/extra_prompts_gen).
 ```
 cd src
 python medsynv2_DiT_reportonly.py --text_feature_folder './text_feature' \

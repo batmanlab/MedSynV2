@@ -85,6 +85,10 @@ We evaluate MedSynV2 on **large-scale 3D CT datasets**, using:
 - 📈 Improved **data efficiency** when used for data augmentation
 - 🌱 Generalization to concepts beyond training distribution
 
+<p align="center">
+<img src="assets/results_modifyingMask.png" width="90%"/>
+</p>
+
 ---
 
 ## 📦 Code Status

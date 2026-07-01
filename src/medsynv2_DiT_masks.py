@@ -726,18 +726,18 @@ class Trainer(object):
             os.mkdir(self.results_folder)
         self.ema_model.eval()
         self.ema_model.half()
+        feat_keys = [
+            "lobe_feat",
+            "airway_feat",
+            "vessel_feat",
+            "heart_feat",
+            "cons_feat",
+            "ggo_feat",
+            "perieffu_feat",
+            "pleffu_feat",
+            "nodule_feat",
+        ]
         for i, data in enumerate(self.dl):
-            feat_keys = [
-                "lobe_feat",
-                "airway_feat",
-                "vessel_feat",
-                "heart_feat",
-                "cons_feat",
-                "ggo_feat",
-                "perieffu_feat",
-                "pleffu_feat",
-                "nodule_feat",
-            ]
 
             feats = [data.get(k) for k in feat_keys]
             for idx_feat in range(len(feat_keys)):

@@ -107,7 +107,7 @@ If flash-attention raises issue, please follow the original [github](https://git
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | Text model (same as [MedSyn](https://github.com/batmanlab/MedSyn/tree/main)) | [pretrained_lm](https://www.dropbox.com/scl/fi/d6tg6si72nnjfa87vawsl/pretrained_lm.gz?rlkey=fcnyrmy1i3xi9frzjchc68kh3&st=gq6xofnh&dl=0) |
 | MedSynV2 Generator               | TBD           |
-| OpenSora checkpoint              | TBD           |
+| OpenSora checkpoint              | [vae.ckpt](https://huggingface.co/batmanLab/MedSynV2/blob/main/vae.ckpt)           |
 
 
 ### 2.1 If you prefer report, extract text features
@@ -129,7 +129,7 @@ python medsynv2_DiT_reportonly.py --text_feature_folder './text_feature' \
 ### 2.3 OpenSora decoding 
 ```
 cd opensora/osp
-python examples/recon_ct.py --pretrained_model_path './model/vae.pth' \
+python examples/recon_ct.py --pretrained_model_path './model/vae.ckpt' \
                             --folder './tmp/medsynv2_dit_x0_results_reportonly' \
                             --save_folder './tmp/medsynv2_dit_x0_results_reportonly_SR' 
 ```
@@ -141,12 +141,13 @@ python examples/convert.py --folder './tmp/medsynv2_dit_x0_results_reportonly_SR
 
 ### 3.1 If you need masks encoded, encode the mask first
 We encode the masks with batch_index from 0 to 5, as a 48GB GPU will only handle this size. 
-After running, concatenate them along the depth axis (trivial).
-Make sure your masks are binary masks. 
+After running, concatenate them along the depth axis (trivial).\
+Make sure your masks are binary masks. \
+Note we extract contours of lobes with `encode_masks_lobe.py`
 ```
 cd opensora/osp
 python examples/encode_masks.py --batch_index 0 \ # you should use 0~5 here
-                                --pretrained_model_path './model/vae.pth' \
+                                --pretrained_model_path './model/vae.ckpt' \
                                 --folder 'YOUR NIFTI MASKS' \
                                 --save_folder 'YOUR MASKS_LATENTS FOLDER' 
 ```
@@ -166,6 +167,18 @@ python medsynv2_DiT_reportonly.py --text_feature_folder './text_feature' \
                                   --include_report
 
 ```
+| anatomy / abnormality | corresponding suffix index                                                                                                |
+|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| lobes                  | 1           |
+| airways                | 2           |
+| vessel                 | 3           |
+| heart                  | 4           |
+| consolidation          | 5           |
+| ground glass opacity   | 6           |
+| pericardial effusion   | 7           |
+| pleural effusion       | 8           |
+| nodule                 | 9           |
+
 
 ### 3.4 OpenSora Decoding 
 The same as 2.3

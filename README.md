@@ -1,4 +1,4 @@
-# <div align="center">MedSynV2: Flexible Multimodal Controllable Generation of 3D Medical Images</div>
+# <div align="center">MedSynV2: Flexible Control of 3D CT Generation via Text and Semantically-Defined Segmentation Prompts</div>
 
 <p align="center">
 <b>Weicheng Dai</b><sup>1</sup>,

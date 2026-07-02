@@ -110,7 +110,7 @@ If flash-attention raises issue, please follow the original [github](https://git
 | pretrained model components               | Checkpoints                                                                                                |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------|
 | Text model (same as [MedSyn](https://github.com/batmanlab/MedSyn/tree/main)) | [pretrained_lm](https://www.dropbox.com/scl/fi/d6tg6si72nnjfa87vawsl/pretrained_lm.gz?rlkey=fcnyrmy1i3xi9frzjchc68kh3&st=gq6xofnh&dl=0) |
-| MedSynV2 Generator               | TBD           |
+| MedSynV2 Generator               | [final_ckpt](https://huggingface.co/batmanLab/MedSynV2/tree/main/final_ckpt)           |
 | OpenSora checkpoint              | [vae.ckpt](https://huggingface.co/batmanLab/MedSynV2/blob/main/vae.ckpt)           |
 
 

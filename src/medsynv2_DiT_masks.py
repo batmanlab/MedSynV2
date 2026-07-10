@@ -376,7 +376,7 @@ class GaussianDiffusion(nn.Module):
         model_in = torch.cat([x_t, x_cond], dim=1) if x_cond is not None else x_t
         
         # Predict z_theta
-        z_theta = self.denoise_fn(model_in, times * self.num_timesteps, text=cond)
+        z_theta = model(model_in, times * self.num_timesteps, text=cond)
         
         # Reformulate flow mathematically from z_theta prediction map 
         t_view = times.view(-1, *((1,) * (x_t.ndim - 1)))

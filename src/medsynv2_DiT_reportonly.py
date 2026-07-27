@@ -380,7 +380,8 @@ class GaussianDiffusion(nn.Module):
         
         # Reformulate flow mathematically from z_theta prediction map 
         t_view = times.view(-1, *((1,) * (x_t.ndim - 1)))
-        flow = (z_theta - x_t) / (0.0 - t_view - eps)
+        denom = torch.clamp(1.0 - t_view, min=eps)
+        flow = (z_theta - x_t) / denom
         
         return flow
 

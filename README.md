@@ -201,11 +201,24 @@ under [Custom Academic License for Model Weights](https://github.com/batmanlab/M
 If you find this work useful, please cite:
 
 ```bibtex
-@inproceedings{dai2026medsynv2,
-  title     = {Flexible Multimodal Controllable Generation of 3D Medical Images},
-  author    = {Dai, Weicheng and Wang, Chenyu and Ghosh, Shantanu and Batmanghelich, Kayhan},
-  booktitle = {European Conference on Computer Vision (ECCV)},
-  year      = {2026}
+@InProceedings{dai2026medsynv2,
+author="Dai, Weicheng
+and Wang, Chenyu
+and Ghosh, Shantanu
+and Batmanghelich, Kayhan",
+editor="Favaro, Paolo
+and Kukelova, Zuzana
+and Maki, Atsuto
+and Rohrbach, Anna
+and Schindler, Konrad
+and Tombari, Federico",
+title="MedSynV2: Flexible Control of 3D CT Generation via Text and Semantically-Defined Segmentation Prompts",
+booktitle="Computer Vision -- ECCV 2026",
+year="2026",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="396--413",
+isbn="978-3-032-37517-9"
 }
 ```
 
